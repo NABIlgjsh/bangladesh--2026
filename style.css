@@ -1,0 +1,38 @@
+.custom-btn{
+  background: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  margin-top: 300px;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  filter: invert(1); /* icon white */
+}
+
+.custom-btn:hover{
+  opacity: 1;
+}
+.card{
+  margin-top: 80px;
+}
+.bang p{
+   font-size: 35px;
+   margin-left: 450px;
+   margin-top: 50px;
+}
+.main{
+  display: flex;
+  align-items: center;gap: 50px;
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+.n marquee {
+  color: rgb(0, 193, 13);
+}

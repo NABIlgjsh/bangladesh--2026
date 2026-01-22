@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centered Navbar Example</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    /* Navbar logo and text alignment */
+    .navbar-brand img {
+      margin-right: 10px;
+    }
+
+    /* Carousel fixed height */
+    .carousel-inner img {
+      height: 450px;
+      object-fit: cover;
+    }
+
+    /* Marquee effect using CSS */
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      background-color: #f8f9fa;
+      padding: 8px 0;
+      font-weight: bold;
+      animation: marquee 15s linear infinite;
+    }
+    .marquee:hover {
+      animation-play-state: paused;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Cards spacing */
+    .main {
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img height="80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_Seal_of_Bangladesh.svg/960px-Government_Seal_of_Bangladesh.svg.png" alt="Logo">
+        <span class="fs-4 fw-bold">2026Bangladesh</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex gap-2 ms-auto">
+        <button class="btn btn-primary">
+          <i class="fa-solid fa-language"></i> EN <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <button class="btn btn-danger">Sign up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    🌟2026D-ISSUING BANK WHETHER YOUR CARD IS ENABLED FOR MPGS AND 3D SECURE BEFORE USING IT TO PURCHASE A TICKET. 🌟 BIMAN WILL OPERATE DIRECT FLIGHTS ON DHAKA-LONDON-DHAKA ROUTE EVERY
+  </div>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide mt-3">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ02o6anzG82Q3Ot_UhBvNqgS2siYCjdQj6EiA5EQNaKQ5eDJWj_-UgrfDxG8FwvDdMC06qaIHVvB_JIxLXFyxWtWw&s=19" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSQPJGjLPTky4z_rTruMowIhusPO3ABY-rL6pKGkEUU0QWPSRYEE1PxtAP2TJdHmTpy9clnXJUYbh1PvRI8aA2m7hE&s=19" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwymQndUmO3ybSuHYPuRjCQ7xhxvuGQ5XpnAfAAzwNbI4_sCNo9DDLx_TTsRM43408oQZ6L8CtYmo2i25YELO8A1fqCvooRySoh-fTvVCvr2nXnaTMlW11jVDcz9N3TNk1DHiiX=w810-h468-n-k-no" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="main row g-3 mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdPlZ3GsIZnZ5iBmaXEh8t9ffJccf0RLjNAw&s" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2023Bangladesh</h5>
+          <p class="card-text">2023 title example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Date over card</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Another Card</h5>
+          <p class="card-text">Example text for the second card. Replace with your own content.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Third Card</h5>
+          <p class="card-text">Example text for the third card. Replace with your own content.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+  /* Navbar logo */
+  .navbar-brand img {
+    margin-right: 8px;
+    height: 50px; /* smaller logo for mobile */
+  }
+
+  /* Carousel */
+  .carousel-inner img {
+    width: 100%;
+    height: auto; /* auto height for mobile */
+    object-fit: cover;
+  }
+
+  /* Marquee effect */
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    padding: 6px 0;
+    font-weight: bold;
+    font-size: 0.9rem; /* smaller font on mobile */
+    animation: marquee 15s linear infinite;
+  }
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Cards spacing */
+  .main {
+    margin: 20px auto;
+    max-width: 100%; /* full width on mobile */
+    padding: 0 10px;
+  }
+
+  /* Make cards full width on small screens */
+  @media (max-width: 768px) {
+    .navbar-brand span {
+      font-size: 1.2rem;
+    }
+    .d-flex.gap-2.ms-auto {
+      flex-direction: column;
+      gap: 5px;
+    }
+    .main .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .card img {
+      height: auto;
+    }
+  }
+</style>
+
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Q6E2C6Q5EJ5F5y6+DF9rJr1YWnY4s3gj4lCT63g35Zh4yK1Z1eH4RC8ldE8qPTHf"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
+
+
